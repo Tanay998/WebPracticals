@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img{
+            width: 33%;
+            height: auto;
+            float: left;
+            margin: 2px 0 0 2px;
+        }
+        img.blur{
+            filter: blur(4px);
+        }
+        img.brightness{
+            filter: brightness(0.30);
+        }
+        img.contrast{
+            filter: contrast(180%);
+        }
+        img.grayscale{
+            filter: grayscale(100%);
+        }
+        img.huerotate{
+            filter: hue-rotate(180deg);
+        }
+        img.invert{
+            filter: invert(100%);
+        }
+        img.opacity{
+            filter: opacity(50%);
+        }
+        img.saturate{
+            filter: saturate(7);
+        }
+        img.sepia{
+            filter: sepia(100%)
+        }
+        img.shadow{
+            filter: drop-shadow(8px 8px 10px green);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Filter Functions</h2>
+    <img src="natureImage.jpg" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="blur" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="brightness" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="contrast" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="grayscale" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="huerotate" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="invert" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="opacity" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="saturate" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="sepia" alt="natureImage" width="300" height="300" />
+    <img src="natureImage.jpg" class="shadow" alt="natureImage" width="300" height="300" />
+</body>
+</html>
