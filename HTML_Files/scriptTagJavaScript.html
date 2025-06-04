@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript</title>
+</head>
+<body>
+    <p>Use JavaScript to change Element Background Color</p>
+    <input type="text" name="txtCol" id="txtCol" onkeyup="showColor()">
+    <script>
+        function showColor(){
+            let col = document.getElementById('txtCol').value;
+            document.body.style.backgroundColor = col;
+        }
+    </script>
+</body>
+</html>

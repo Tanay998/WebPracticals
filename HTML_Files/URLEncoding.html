@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Encoding</title>
+</head>
+<body>
+    <h1>URL Encoding</h1>
+    <input type="text" name="txt1" id="txt1" />
+    <br /><br />
+    <button onclick="code()">Encode</button>
+    <p id="para1"></p>
+    <script>
+        function code(){
+            var info = document.getElementById('txt1').value;
+            document.getElementById('para1').innerHTML = encodeURIComponent(info);
+        }
+    </script>
+</body>
+</html>
