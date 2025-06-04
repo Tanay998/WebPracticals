@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Images</title>
+    <style>
+        div.mainDiv{
+            width: 100%;
+        }
+        div.polaroid1{
+            width: 30%;
+            margin: 0 0 0 16px;
+            display: inline-block;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        div.polaroid2{
+            width: 30%;
+            display: inline-block;
+            margin: 0 0 0 16px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        div.container{
+            text-align: center;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Polaroid Images/Cards</h2>
+    <div class="mainDiv">
+        <div class="polaroid1">
+            <img src="GreenValley.jpg" alt="GreenValley" style="width: 100%;" />
+            <div class="container">
+                <p>Green Garden Valley</p>
+            </div>
+        </div>
+        <div class="polaroid2">
+            <img src="image2.jpg" alt="image2" style="width: 100%;">
+            <div class="container">
+                <p>Images Containing Beautiful Part</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

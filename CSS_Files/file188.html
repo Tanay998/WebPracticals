@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        #div1{
+            width: 300px;
+            height: 200px;
+            border: 2px solid red;
+            background-color: brown;
+            display: inline-block;
+            animation-name: ani1;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+        #div2{
+            width: 300px;
+            height: 200px;
+            border: 2px solid gold;
+            background-color: green;
+            display: inline-block;
+            margin-left: 30%;
+            animation-name: ani2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+        }
+        @keyframes ani1{
+            0%{
+                background-color: brown;
+            }
+            25%{
+                border-radius: 8px 10px 10px 8px;
+                margin-left: 30%;
+                background-color: blueviolet;
+            }
+            50%{
+                border-radius: 50%;
+                margin-top: 30%;
+                background-color: chocolate;
+            }
+            75%{
+                border-radius: 25%;
+                margin-right: 30%;
+                background-color: crimson;
+            }
+            100%{
+                border-radius: 14px 16px 16px 14px;
+                margin-bottom: 30%;
+                background-color: firebrick;
+            }
+        }
+        @keyframes ani2{
+            0%{
+                background-color: green;
+            }
+            25%{
+                border-radius: 8px 10px 10px 8px;
+                margin-right: 30%;
+                background-color: rgb(96, 56, 11);
+            }
+            50%{
+                border-radius: 50%;
+                margin-top: 30%;
+                background-color: rgb(35, 10, 118);
+            }
+            75%{
+                border-radius: 25%;
+                margin-left: 30%;
+                background-color: rgb(176, 13, 84);
+            }
+            100%{
+                border-radius: 14px 16px 16px 14px;
+                margin-bottom: 30%;
+                background-color: rgba(151, 117, 15, 0.851);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

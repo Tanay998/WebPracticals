@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 8s;
+            animation-delay: 4s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+        }
+        @keyframes example{
+            /* from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            } */
+            25%{
+                margin-left: 100px;
+                background-color: yellow;
+            }
+            40%{
+                margin-top: 200px;
+                background-color: green;
+            }
+            50%{
+                margin-right: 300px;
+                background-color: blue;
+            }
+            100%{
+                margin-bottom: 300px;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div></div>
+    <p><b>Note: </b>When an animation is finished, it goes back to its original style.</p>
+</body>
+</html>

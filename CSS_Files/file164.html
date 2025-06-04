@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Images</title>
+    <style>
+        img#img1{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        img#img2{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        img#img2:hover{
+            box-shadow: 0 0 2px 1px rgba(0,0,0,0.2    );
+        }
+    </style>
+</head>
+<body>
+    <p>Use the border property to create a thumbnail images: </p>
+    <hr />
+    <h2>Without Link</h2>
+    <img src="GreenValley.jpg" alt="GreenValley" style="width: 150px;" id="img1" />
+    <br /><br />
+    <hr />
+    <h2>With Link</h2>
+    <h2>Thumbnail image as link</h2>
+    <p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+    <p>Hover over the image and click on it to see the effect.</p>
+    <a href="sunset.jpg" target="_blank">
+        <img src="sunrise.jpg" alt="sunrise" style="width: 150px;" id="img2" />
+    </a>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #111;
+        }
+        .active{
+            background-color: #4CAF50;
+        }
+        .container{
+            margin: 16px;
+            background-color: rgba(240,240,0,0.1);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Scroll Down</h2>
+        <p>Scroll down to see the sticky effect.</p>
+    </div>
+    <ul>
+        <li>
+            <a href="#home" class="active">Home</a>
+        </li>
+        <li>
+            <a href="#news">News</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <div class="container">
+        <h3>Sticky Navigation Bar example</h3>
+        <p>The navbar will <strong>sticky</strong> to the top when you reach its scroll position.</p>
+        <p><strong>Note: </strong>Internet explorer do not support sticky positioning and safari requires a -webkit-prefix.</p>
+        <p>Some text to enable scrolling. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit excepturi eaque molestias error numquam voluptatem minima! Quis magni, suscipit quod alias illum magnam tenetur praesentium, obcaecati animi molestias vel.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus assumenda nesciunt quod inventore odit provident dignissimos ducimus obcaecati sequi laboriosam, fugiat placeat architecto voluptas libero vero quaerat. Quod, omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio veniam maxime ad eum illum voluptatibus nulla provident sed ea? Sit optio cupiditate possimus cumque distinctio corporis illo ea velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magni dignissimos dolore atque explicabo. Labore, recusandae! Aspernatur, velit molestias. Nisi doloremque doloribus odit dolor corrupti ex qui ad ratione enim?</p>
+        <p>Some text to enable scrolling. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore impedit excepturi eaque molestias error numquam voluptatem minima! Quis magni, suscipit quod alias illum magnam tenetur praesentium, obcaecati animi molestias vel.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus assumenda nesciunt quod inventore odit provident dignissimos ducimus obcaecati sequi laboriosam, fugiat placeat architecto voluptas libero vero quaerat. Quod, omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio veniam maxime ad eum illum voluptatibus nulla provident sed ea? Sit optio cupiditate possimus cumque distinctio corporis illo ea velit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum magni dignissimos dolore atque explicabo. Labore, recusandae! Aspernatur, velit molestias. Nisi doloremque doloribus odit dolor corrupti ex qui ad ratione enim?</p>
+    </div>
+</body>
+</html>
