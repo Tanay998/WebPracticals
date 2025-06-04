@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript assignment Operator</h1>
+    <p id="demo"></p>
+    <script>
+        // assignment operator
+        let a = 34;
+        let b = 56;
+        document.getElementById('demo').innerHTML = "The addition assign operator(+=) value is: " + (a += b) + "<br />" //a+=b is equivalent to a = a + b: a=90
+            + "The subtraction assign operator(-=) value is: " + (a -= b) + "<br />" //a-=b is equivalent to a = a - b: a=90-56=34, a = 34
+            + "The multiplication assign operator(*=) value is: " + (a *= b) + "<br />" //a*=b is equivalent to a = a * b: a=34*56=1904, a = 1904
+            + "The division assign operator(/=) value is: " + (a /= b) + "<br />" //a/=b is equivalent to a = a / b: a=1904/56=34, a = 34
+            + "The modulus assign operator(%=) value is: " + (a %= b) + "<br />" //a%=b is equivalent to a = a % b: a=34%56=34, a = 34
+            + "The exponentiation assign operator(**=) value is: " + (a **= b) + "<br />" //a**=b is equivalent to a = a ** b: a=34**56=1.3407807929942597e+84, a = 1.3407807929942597e+84;
+    </script>
+</body>
+</html>
