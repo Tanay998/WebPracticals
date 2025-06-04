@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <form>
+        <p id="demo"></p>
+        <label for="value1">Enter first Value</label>
+        <input type="text" name="value1" id="value1">
+        <br /><br />
+        <label for="value2">Enter second Value</label>
+        <input type="text" name="value2" id="value2">
+        <br /><br />
+        <!-- <button type="button" onclick="myFunction()">ADDITION</button> -->
+        <select name="operation" id="operation" onchange="myFunction()">
+            <option value="" selected>--Select Operation--</option>
+            <option value="Addition">Addition(+)</option>
+            <option value="Subtraction">Subtraction(-)</option>
+            <option value="Multiplication">Multiplication(*)</option>
+            <option value="Division">Division(/)</option>
+        </select>
+    </form>
+    <script>
+        function myFunction(){
+            let opr = document.getElementById('operation').value;
+            console.log(opr);
+            let a = parseInt(document.getElementById('value1').value);
+            let b = parseInt(document.getElementById('value2').value);
+            if(opr == "Addition"){
+                document.getElementById('demo').innerHTML = "The addition is: "+(a+b);
+            }
+            else if(opr == "Subtraction"){
+                document.getElementById('demo').innerHTML = "The subtraction is: "+(a-b);
+            }
+            else if(opr == "Multiplication"){
+
+                document.getElementById('demo').innerHTML = "The Multiplication is: "+(a*b)
+            }
+
+            else{
+                document.getElementById('demo').innerHTML = "The Division is: "+(a/b);
+            }
+        }
+    </script>
+</body>
+</html>
