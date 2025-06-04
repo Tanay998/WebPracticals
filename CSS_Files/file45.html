@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating a conic gradient</title>
+    <style>
+        #grad1{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            background-image: repeating-conic-gradient(red 15%, yellow 25%);
+        }
+        #grad2{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 15px 0;
+            background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Repeating a conic gradient</h1>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+</body>
+</html>
