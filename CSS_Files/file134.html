@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+       div > p{
+        background-color: yellow;
+       }
+       section > p{
+        background-color: brown;
+       }
+    </style>
+</head>
+<body>
+    <h2>Child Selectors</h2>
+    <p>The Child Selectors selects all elements that are the children of a specified element.</p>
+    <div>
+        <p>Paragraph 1 in the div</p>
+        <p>Paragraph 2 in the div</p>
+        <section>
+            <p>Paragraph 3 in section under div</p>
+        </section>
+    </div>
+    <p>Paragraph 4 outside div</p>
+    <p>Paragraph 5 outside div</p>
+</body>
+</html>

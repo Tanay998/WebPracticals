@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        div{
+            width: 320px;
+            height: 50px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculate the total width</h2>
+    <img src="sunset.jpg" alt="sunset" width="350" height="263">
+    <div>
+        The picture above is 350px wide. The total width of this element is also 350px. The total height of this element is 80px.
+    </div>
+    <p>Here is the calculation: </p>
+    <p>
+        320px (width of content area)
+        + 20px (left padding + right padding)
+        + 10px (left border + right border)
+        =350px (total width)
+    </p>
+    <p>
+        50px (height of content area)
+        + 20px (top padding + bottom padding)
+        + 10px (top border + bottom border)
+        = 80px (total height)
+    </p>
+</body>
+</html>
